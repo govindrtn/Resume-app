@@ -153,10 +153,6 @@ function ResumeWriter(props) {
           <label>Add skils</label>
           <InputControl
             placeholder="Add skil 1"
-            // value={values.points}
-            // onChange={(event) =>
-            //   setValues((prev) => ({ ...prev, points: event.target.value }))
-            // }
             value={values.points ? values.points[0] : ""}
             onChange={(event) => handlePointUpdate(event.target.value, 0)
         }
@@ -179,7 +175,7 @@ function ResumeWriter(props) {
         <InputControl
           label="Tech-Stack"
           value={values.techStack}
-          placeholder="Enter basic overview of project"
+          placeholder="Enter tech Stack "
           onChange={(event) =>
             setValues((prev) => ({ ...prev, techStack: event.target.value }))
           }
@@ -190,11 +186,8 @@ function ResumeWriter(props) {
             placeholder="Project description"
             value={values.points ? values.points[0] : ""}
             onChange={(event) => handlePointUpdate(event.target.value, 0)
-        }
-            // onChange={(event) =>
-            //   setValues((prev) => ({ ...prev, points: event.target.value }))}    
+        } 
           />
-
         </div>
       </div>
     );
