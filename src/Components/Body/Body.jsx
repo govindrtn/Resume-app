@@ -50,7 +50,6 @@ function Body() {
         }}
         content={() => ResumeRef.current}
       />
-        {/* <button>Download <ArrowDownwardIcon /> </button> */}
       </div>
       <div className={styles.main}>
         <ResumeWriter sections={sections}
